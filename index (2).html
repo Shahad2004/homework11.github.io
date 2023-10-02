@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name = "author" content = "Shahad Firas">
+    <meta name = "description" content ="This is a page I am editing to precieve what I take in my HTML Course">
+    <title>Exercise 2</title>
+    <link rel= "icon" href="html5.png" type ="image/x-icon">    
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <style>
+        *{
+            font-size: 22px;
+        }
+        body {
+            background-color: #333;
+            color: whitesmoke;
+        }
+        
+                </style>
+</head>
+
+<body>
+  <form action="form_data.html" method="POST" target="_blank">
+        <h2>Let's Sign You In!</h2>
+        <p></p>
+        <fieldset>
+            <legend>Create New User Account</legend>
+    <p>
+        <label for="userName">User Name:</label>
+        <input type="text" name="userName" id="userName" placeholder="ex: Shahad2004" autocomplete="on" autofocus required> 
+    </p><p>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="ex: Shahad" autocomplete="on" required>
+    </p><p>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="ex: Firas" autocomplete="on" required>
+    </p><p>
+        <label for="Password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Your Secret" required>
+    </p><p>
+    <label for="confirmPassword">Re-Enter Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+    </p><p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="enter your email" required>
+    </p>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" id="male" value="male"required>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female"required>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="others" value="others"required>
+    <label for="others">Others</label>
+    <p>
+      
+      <label for="message">Current Address:</label><br>
+      <textarea name="Address" id="Address" cols="30" rows="10">Address Link:</textarea>
+    </p>
+<p>
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" id="birthday" name="birthday" required>
+    </p>
+        <hr>
+    <p>
+        <label for="intersetsOfSports">Interest(s) of Sports</label>
+        <input type="checkbox" name="Interest" id="basketball" value="basketball">
+        <label for="basketball">Basketball</label>
+        <input type="checkbox" name="Interest" id="soccer" value="soccer">
+        <label for="soccer">Soccer</label>
+        <input type="checkbox" name="Interest" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" name="Interest" id="golf" value="golf">
+        <label for="golf">Golf</label>
+    </p>      
+
+        <label for="major">Major:</label>
+        <select name="major" id="major">
+           <optgroup label="Thecnology Majors">
+            <option value="computerScience">Computer Science</option>
+            <option value="artificalIntelligence">AI</option>
+            <option value="cyberSecurity">Cyber Security</option>
+           </optgroup>
+          <optgroup label="Thecnical Majors">
+            <option value="financeServices" selected>Finance</option>
+            <option value="dataScience">Data Science</option>
+            <option value="virtualReality">VR</option>
+          </optgroup>
+            <option value="others">Others</option>
+        </select>
+    </p>  
+    <button style="width:120px; height:50px;" type="submit" onclick="submitForm(event)"><strong>Submit</strong></button>
+
+    </fieldset>
+    </form>
+   
+        
+
+</body>
+</html>
